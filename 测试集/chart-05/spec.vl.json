@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "2025 年各获客渠道新增用户",
+    "subtitle": "单位：万人｜来源：模拟数据"
+  },
+  "width": 460,
+  "height": 260,
+  "encoding": {
+    "y": {
+      "field": "渠道",
+      "type": "nominal",
+      "sort": null,
+      "axis": {
+        "title": null
+      }
+    },
+    "x": {
+      "field": "新增用户",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          210
+        ]
+      },
+      "axis": {
+        "title": "新增用户（万人）"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#4C78A8"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 4,
+        "fontSize": 12,
+        "color": "#333333"
+      },
+      "encoding": {
+        "text": {
+          "field": "新增用户"
+        }
+      }
+    }
+  ],
+  "data": {
+    "values": [
+      {
+        "渠道": "应用商店",
+        "新增用户": 186
+      },
+      {
+        "渠道": "信息流广告",
+        "新增用户": 142
+      },
+      {
+        "渠道": "老带新",
+        "新增用户": 118
+      },
+      {
+        "渠道": "搜索广告",
+        "新增用户": 87
+      },
+      {
+        "渠道": "线下网点",
+        "新增用户": 64
+      },
+      {
+        "渠道": "合作伙伴",
+        "新增用户": 41
+      },
+      {
+        "渠道": "其他",
+        "新增用户": 23
+      }
+    ]
+  },
+  "config": {
+    "font": "PingFang SC",
+    "background": "#ffffff",
+    "padding": 16,
+    "title": {
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555555",
+      "anchor": "start",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "titleFontWeight": "normal",
+      "labelColor": "#333333",
+      "titleColor": "#333333"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

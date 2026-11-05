@@ -1,0 +1,182 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "App 日活跃用户与指数走势高度同步",
+    "subtitle": "2025 年月度数据｜来源：模拟数据"
+  },
+  "width": 520,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "月份",
+      "type": "temporal",
+      "timeUnit": "utcyearmonth",
+      "scale": {
+        "type": "utc"
+      },
+      "axis": {
+        "format": "%-m月",
+        "title": null,
+        "labelAngle": 0
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#4C78A8",
+        "strokeWidth": 2.5,
+        "point": {
+          "filled": true,
+          "color": "#4C78A8"
+        }
+      },
+      "encoding": {
+        "y": {
+          "field": "指数",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              3040,
+              3330
+            ],
+            "zero": false
+          },
+          "axis": {
+            "title": "模拟指数（点）",
+            "titleColor": "#4C78A8",
+            "labelColor": "#4C78A8"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#F58518",
+        "strokeWidth": 2.5,
+        "point": {
+          "filled": true,
+          "color": "#F58518"
+        }
+      },
+      "encoding": {
+        "y": {
+          "field": "日活",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              408,
+              470
+            ],
+            "zero": false
+          },
+          "axis": {
+            "title": "日活跃用户（万人）",
+            "orient": "right",
+            "titleColor": "#F58518",
+            "labelColor": "#F58518",
+            "grid": false
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "月份": "2025-01-01",
+        "指数": 3052,
+        "日活": 412
+      },
+      {
+        "月份": "2025-02-01",
+        "指数": 3088,
+        "日活": 418
+      },
+      {
+        "月份": "2025-03-01",
+        "指数": 3071,
+        "日活": 415
+      },
+      {
+        "月份": "2025-04-01",
+        "指数": 3125,
+        "日活": 426
+      },
+      {
+        "月份": "2025-05-01",
+        "指数": 3160,
+        "日活": 433
+      },
+      {
+        "月份": "2025-06-01",
+        "指数": 3142,
+        "日活": 429
+      },
+      {
+        "月份": "2025-07-01",
+        "指数": 3198,
+        "日活": 441
+      },
+      {
+        "月份": "2025-08-01",
+        "指数": 3231,
+        "日活": 447
+      },
+      {
+        "月份": "2025-09-01",
+        "指数": 3214,
+        "日活": 444
+      },
+      {
+        "月份": "2025-10-01",
+        "指数": 3260,
+        "日活": 453
+      },
+      {
+        "月份": "2025-11-01",
+        "指数": 3297,
+        "日活": 461
+      },
+      {
+        "月份": "2025-12-01",
+        "指数": 3318,
+        "日活": 466
+      }
+    ]
+  },
+  "config": {
+    "font": "PingFang SC",
+    "background": "#ffffff",
+    "padding": 16,
+    "title": {
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555555",
+      "anchor": "start",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "titleFontWeight": "normal",
+      "labelColor": "#333333",
+      "titleColor": "#333333"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

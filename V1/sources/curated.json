@@ -1,0 +1,1394 @@
+{
+  "schema_version": 1,
+  "method": "人工审阅的转换种子；更改需要核对原文与适用条件。",
+  "experiences": [
+    {
+      "id": "team-v1-1.3",
+      "statement": "旧版推荐小标题使用主题与结论格式。",
+      "status": "superseded",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "旧版推荐小标题使用主题与结论格式。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v1-1.3",
+          "旧版推荐小标题使用主题与结论格式。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "小标题推荐使用“主题｜结论”的格式"
+        }
+      ]
+    },
+    {
+      "id": "team-v1-1.4",
+      "statement": "旧版脚注间距40px。",
+      "status": "superseded",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "旧版脚注间距40px。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v1-1.4",
+          "旧版脚注间距40px。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "图表区与脚注之间保留 40px 间距"
+        }
+      ]
+    },
+    {
+      "id": "team-v1-2.2",
+      "statement": "旧版要求非零折线轴保留0刻度和断轴符号。",
+      "status": "superseded",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "旧版要求非零折线轴保留0刻度和断轴符号。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v1-2.2",
+          "旧版要求非零折线轴保留0刻度和断轴符号。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "此时必须在纵轴底部保留 0 刻度，并画上断轴符号"
+        }
+      ]
+    },
+    {
+      "id": "team-v1-3.1",
+      "statement": "旧版金额保留两位小数，后续新增同类统一要求。",
+      "status": "superseded",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "旧版金额保留两位小数，后续新增同类统一要求。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v1-3.1",
+          "旧版金额保留两位小数，后续新增同类统一要求。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "金额保留两位小数。"
+        }
+      ]
+    },
+    {
+      "id": "team-v1-3.2",
+      "statement": "旧版数据标注写全单位。",
+      "status": "superseded",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "旧版数据标注写全单位。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v1-3.2",
+          "旧版数据标注写全单位。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "数据标注写全单位"
+        }
+      ]
+    },
+    {
+      "id": "team-v1-1.1",
+      "statement": "手机卡片宽375，左右内边距16。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "mobile"
+        ],
+        "conditions": [
+          "先确认规范所指的外层卡片与源码测量对象一致，核对渲染倍率和单位。"
+        ],
+        "exceptions": [
+          "外层画布已符合名义宽度，仅内层面板因装饰外边距变窄时，若没有依据确认规范指内层面板，作为口径疑问保留，不判为尺寸错误。"
+        ]
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "手机卡片宽375，左右内边距16。",
+        "fail_condition": "能确认实际测量的是规范要求的同一层容器，且单位换算后确有差异。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v1-1.1",
+          "手机卡片宽375，左右内边距16。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "手机端卡片宽度 375，左右内边距 16。",
+          "interpretation": "条款给出尺寸，未区分画布和装饰内框；测量对象一致性由审查契约补充。"
+        }
+      ]
+    },
+    {
+      "id": "team-v1-1.2",
+      "statement": "主标题不超过两行，用一句话呈现结论，可用品牌紫突出关键词。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "mobile"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "主标题不超过两行，用一句话呈现结论，可用品牌紫突出关键词。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v1-1.2",
+          "主标题不超过两行，用一句话呈现结论，可用品牌紫突出关键词。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "主标题不超过两行，用一句话写出结论，关键词可以用品牌紫高亮。"
+        }
+      ]
+    },
+    {
+      "id": "team-v1-2.1",
+      "statement": "柱状图数值轴从0开始。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [
+          "普通柱以从基线出发的长度编码大小"
+        ],
+        "exceptions": [
+          "浮动区间或瀑布桥增减柱按其语义单独判断。"
+        ]
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "柱状图数值轴从0开始。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v1-2.1",
+          "柱状图数值轴从0开始。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "柱状图的纵轴必须从 0 开始。"
+        },
+        {
+          "source_id": "team-reviews",
+          "needle": "结论：维持从 0 开始，标题补上增幅。"
+        }
+      ]
+    },
+    {
+      "id": "team-v1-4.1",
+      "statement": "主色品牌紫#7B3FE4，辅助色蓝#3E7BFA与浅紫#B9A3F0。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "主色品牌紫#7B3FE4，辅助色蓝#3E7BFA与浅紫#B9A3F0。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v1-4.1",
+          "主色品牌紫#7B3FE4，辅助色蓝#3E7BFA与浅紫#B9A3F0。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "主色为品牌紫 `#7B3FE4`，辅助色为蓝 `#3E7BFA` 和浅紫 `#B9A3F0`。"
+        },
+        {
+          "source_id": "team-decisions",
+          "needle": "品牌主色不改。个人审美偏好不进规范，评审时也不作为修改意见。"
+        }
+      ]
+    },
+    {
+      "id": "team-v1-5.1",
+      "statement": "脚注应写明数据来源。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "脚注应写明数据来源。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v1-5.1",
+          "脚注应写明数据来源。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "脚注写明数据来源。"
+        }
+      ]
+    },
+    {
+      "id": "team-v2-1.3",
+      "statement": "手机端小标题只写主题，结论放主标题。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "mobile"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "手机端小标题只写主题，结论放主标题。"
+      },
+      "validity": {
+        "effective_from": "2026-06-18",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [
+          "team-v1-1.3"
+        ],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v2-1.3",
+          "手机端小标题只写主题，结论放主标题。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v2",
+          "needle": "小标题只写主题，不再加“｜结论”。结论放在主标题里。"
+        }
+      ]
+    },
+    {
+      "id": "team-v2-1.4",
+      "statement": "图表区底部到脚注分隔线间距为24px。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "图表底部到脚注分隔线是否相距24 CSS px？",
+        "evidence_needed": [
+          "容器与分隔线位置",
+          "CSS 或 SVG 尺寸"
+        ],
+        "pass_condition": "可比坐标下相距24px。",
+        "fail_condition": "定位的是图表底部和分隔线，且在同一CSS坐标系中相距非24px。",
+        "action": "将有效间距改为24px。"
+      },
+      "validity": {
+        "effective_from": "2026-06-18",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [
+          "team-v1-1.4"
+        ],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v2-1.4",
+          "图表区底部到脚注分隔线间距为24px。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v2",
+          "needle": "图表区底部到脚注分隔线的间距改为 24px。"
+        }
+      ]
+    },
+    {
+      "id": "team-v2-3.1",
+      "statement": "金额保留两位小数，同类数值的小数位一致。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "金额保留两位小数，同类数值的小数位一致。"
+      },
+      "validity": {
+        "effective_from": "2026-06-18",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [
+          "team-v1-3.1"
+        ],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v2-3.1",
+          "金额保留两位小数，同类数值的小数位一致。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v2",
+          "needle": "金额保留两位小数。同一张图中，同一类数值（例如所有数据标注）的小数位数必须一致。"
+        },
+        {
+          "source_id": "team-reviews",
+          "needle": "没关系，统一两位。"
+        }
+      ]
+    },
+    {
+      "id": "team-v2-3.2",
+      "statement": "数据标注只写数值，单位含百分号统一放单位行。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [
+          "带数据点、柱体等数据标注的图"
+        ],
+        "exceptions": [
+          "坐标轴单位行、表格列头、正文及标题应和数据标注区分；不能靠猜测补单位。"
+        ]
+      },
+      "check": {
+        "question": "数值旁是否重复单位，单位能否从单位行辨认？",
+        "evidence_needed": [
+          "PNG",
+          "标注格式化代码"
+        ],
+        "pass_condition": "数据标注仅有数值，单位可从对应单位行辨认。",
+        "fail_condition": "数值标注附金额单位、币种或百分号，或者应有的单位行缺失。",
+        "action": "将可核实的单位移到单位行，保留原数据量纲。"
+      },
+      "validity": {
+        "effective_from": "2026-06-18",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [
+          "team-v1-3.2"
+        ],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v2-3.2",
+          "数据标注只写数值，单位含百分号统一放单位行。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v2",
+          "needle": "数据标注只写数值，不带单位（包括 %）。单位统一写在单位行里。"
+        }
+      ]
+    },
+    {
+      "id": "team-v2-2.4",
+      "statement": "单位行放在纵轴上方，左边缘与纵轴刻度数字的最左侧对齐。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "单位行与纵轴刻度数字的最左边缘是否对齐？",
+        "evidence_needed": [
+          "PNG",
+          "SVG text-anchor 与 x 或 CSS 对齐配置"
+        ],
+        "pass_condition": "单位行左缘和刻度文字最左缘对齐。",
+        "fail_condition": "图面和定位配置可确认两者左缘不一致。",
+        "action": "将单位行左对齐到刻度文字最左缘。"
+      },
+      "validity": {
+        "effective_from": "2026-06-18",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v2-2.4",
+          "单位行左边缘与纵轴刻度数字最左侧对齐。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v2",
+          "needle": "单位行的左边缘与纵轴刻度数字的最左侧对齐，不要居中放在轴线上方。"
+        },
+        {
+          "source_id": "team-v1",
+          "needle": "2.3 单位写在纵轴上方。"
+        }
+      ]
+    },
+    {
+      "id": "team-v2-2.5",
+      "statement": "同一纵轴上的不同指标量级相差至少5倍时，拆成上下两图。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [
+          "同图共用同一纵轴、存在两个以上单位可比的不同指标"
+        ],
+        "exceptions": [
+          "统一单位后仍无法确定代表量级，或零值、正负混合导致倍数无明确意义时，记录待核查；不把同一指标的不同时期或系列当成不同指标。"
+        ]
+      },
+      "check": {
+        "question": "同轴指标统一单位后是否达到拆图阈值？",
+        "evidence_needed": [
+          "CSV",
+          "轴标签",
+          "源码"
+        ],
+        "pass_condition": "指标已经拆图，或可核对量级比小于5。",
+        "fail_condition": "不同指标共轴且代表量级比至少为5，证据中列出取值与比值。",
+        "action": "拆成上下两图并各自标注单位。"
+      },
+      "validity": {
+        "effective_from": "2026-06-18",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v2-2.5",
+          "量级相差5倍以上的指标拆成上下两图，团队不用双纵轴。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v2",
+          "needle": "量级相差 5 倍以上的指标不放在同一个纵轴上，拆成上下两张图。不使用双纵轴。"
+        }
+      ]
+    },
+    {
+      "id": "team-v2-4.3",
+      "statement": "最多1主色加2辅助色，涨跌色另计；表格用中性底色，最多高亮1至2关键行。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "最多1主色加2辅助色，涨跌色另计；表格用中性底色，最多高亮1至2关键行。"
+      },
+      "validity": {
+        "effective_from": "2026-06-18",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v2-4.3",
+          "最多1主色加2辅助色，涨跌色另计；表格用中性底色，最多高亮1至2关键行。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v2",
+          "needle": "一张图最多使用 1 个主色和 2 个辅助色，涨跌色不计入。表格行使用中性底色，最多只对 1–2 个关键行高亮。"
+        }
+      ]
+    },
+    {
+      "id": "team-v2-5.2",
+      "statement": "来源行写对外提供方与报告名称，隐藏内部字段。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [
+          "图表有来源脚注"
+        ],
+        "exceptions": [
+          "报告名称适用于报告类数据；行情等来源不得编造报告名称；模拟数据按实际情况披露。"
+        ]
+      },
+      "check": {
+        "question": "来源行是否以读者可理解的名称描述来源？",
+        "evidence_needed": [
+          "PNG",
+          "brief",
+          "来源行源码"
+        ],
+        "pass_condition": "来源名称清楚、没有内部字段。",
+        "fail_condition": "可见来源行包含 source_id 等内部字段，或以内部占位语替代来源。",
+        "action": "删除内部字段并据实际输入写明对外来源。"
+      },
+      "validity": {
+        "effective_from": "2026-06-18",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v2-5.2",
+          "来源行写对外提供方与报告名称，隐藏内部字段。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v2",
+          "needle": "来源行只写对外的数据提供方和报告名称，不能出现 source_id、“用户提供数据”之类的内部字段。"
+        }
+      ]
+    },
+    {
+      "id": "team-v2-6.1",
+      "statement": "手机类目在词边界换行，或使用规范附录中的简称。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "mobile"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "手机类目在词边界换行，或使用规范附录中的简称。"
+      },
+      "validity": {
+        "effective_from": "2026-06-18",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v2-6.1",
+          "手机类目在词边界换行，或使用规范附录中的简称。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v2",
+          "needle": "手机端的类目标签不能在一个词的中间断行。"
+        }
+      ]
+    },
+    {
+      "id": "team-chat-20260702",
+      "statement": "面向该团队国内投资者时，各市场统一红涨绿跌。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [
+          "面向国内投资者且颜色编码金融涨跌"
+        ],
+        "exceptions": [
+          "按涨跌值及图例核对；普通品牌配色、无涨跌语义的系列色不套用。"
+        ]
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "面向该团队国内投资者时，各市场统一红涨绿跌。"
+      },
+      "validity": {
+        "effective_from": "2026-07-02",
+        "authority": "explicit_team_decision"
+      },
+      "relations": {
+        "overrides": [
+          "team-v1-4.2"
+        ],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 100,
+        "keywords": [
+          "team-chat-20260702",
+          "面向该团队国内投资者时，各市场统一红涨绿跌。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-decisions",
+          "needle": "统一红涨绿跌，不分市场。"
+        }
+      ]
+    },
+    {
+      "id": "team-chat-20260814",
+      "statement": "折线轴非零起点时，不画断轴符号，也不画孤立0刻度。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [
+          "折线图且纵轴不从0开始"
+        ],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "折线轴非零起点时，不画断轴符号，也不画孤立0刻度。"
+      },
+      "validity": {
+        "effective_from": "2026-08-14",
+        "authority": "explicit_team_decision"
+      },
+      "relations": {
+        "overrides": [
+          "team-v1-2.2"
+        ],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 100,
+        "keywords": [
+          "team-chat-20260814",
+          "折线轴非零起点时，不画断轴符号，也不画孤立0刻度。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-decisions",
+          "needle": "折线图纵轴不从 0 开始时，不画断轴符号，也不画 0 刻度。规范 v1 的 2.2 作废"
+        }
+      ]
+    },
+    {
+      "id": "team-chat-20260903",
+      "statement": "PC大屏小标题可保留主题与结论格式。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "large_screen"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "PC大屏小标题可保留主题与结论格式。"
+      },
+      "validity": {
+        "effective_from": "2026-09-03",
+        "authority": "explicit_team_decision"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": [
+          "team-v2-1.3"
+        ]
+      },
+      "retrieval": {
+        "priority": 100,
+        "keywords": [
+          "team-chat-20260903",
+          "PC大屏小标题可保留主题与结论格式。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-decisions",
+          "needle": "PC 大屏看板空间足够，小标题可以保留“主题｜结论”的格式。手机端仍然按 v2 的 1.3 执行。"
+        }
+      ]
+    },
+    {
+      "id": "team-chat-20260920",
+      "statement": "保留品牌紫，个人配色偏好不作为审查修改依据。",
+      "status": "reference_only",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "保留品牌紫，个人配色偏好不作为审查修改依据。"
+      },
+      "validity": {
+        "effective_from": "2026-09-20",
+        "authority": "explicit_team_decision"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": [],
+        "duplicates": [
+          "team-v1-4.1"
+        ]
+      },
+      "retrieval": {
+        "priority": 100,
+        "keywords": [
+          "team-chat-20260920",
+          "保留品牌紫，个人配色偏好不作为审查修改依据。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-decisions",
+          "needle": "品牌主色不改。个人审美偏好不进规范，评审时也不作为修改意见。"
+        }
+      ]
+    },
+    {
+      "id": "team-proposal-remove-labels",
+      "statement": "提案主张删除所有数据标注，但该提案已被明确否决。",
+      "status": "rejected",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "提案主张删除所有数据标注，但该提案已被明确否决。"
+      },
+      "validity": {
+        "effective_from": "2026-10-11",
+        "authority": "rejected_proposal"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-proposal-remove-labels",
+          "提案主张删除所有数据标注，但该提案已被明确否决。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-decisions",
+          "needle": "不采纳。普通用户主要看标注读数。"
+        }
+      ]
+    },
+    {
+      "id": "team-template-footer",
+      "statement": "旧模板常量FOOTER_GAP仍为40，附TODO待按v2更新。",
+      "status": "reference_only",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "旧模板常量FOOTER_GAP仍为40，附TODO待按v2更新。"
+      },
+      "validity": {
+        "effective_from": "2026-05-30",
+        "authority": "implementation_snapshot"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-template-footer",
+          "旧模板常量FOOTER_GAP仍为40，附TODO待按v2更新。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-template",
+          "needle": "export const FOOTER_GAP = 40; // TODO: 规范 v2 要改，等定稿后同步"
+        }
+      ]
+    },
+    {
+      "id": "team-template-labels",
+      "statement": "模板仍带单位与断轴设置，需按后续规范决议审查。",
+      "status": "reference_only",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "模板仍带单位与断轴设置，需按后续规范决议审查。"
+      },
+      "validity": {
+        "effective_from": "2026-05-30",
+        "authority": "implementation_snapshot"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-template-labels",
+          "模板仍带单位与断轴设置，需按后续规范决议审查。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-template",
+          "needle": "export const LABEL_WITH_UNIT = true;"
+        }
+      ]
+    },
+    {
+      "id": "team-v2-2.5-dual-axis",
+      "statement": "团队信息图不使用双纵轴。",
+      "status": "active",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [
+          "同一图中有两个纵向数值尺度"
+        ],
+        "exceptions": [
+          "上下子图各有自己的纵轴时分别检查。"
+        ]
+      },
+      "check": {
+        "question": "两组指标是否映射到同一绘图区内的独立纵向尺度？",
+        "evidence_needed": [
+          "PNG",
+          "源码"
+        ],
+        "pass_condition": "同一绘图区只有一个纵向尺度。",
+        "fail_condition": "同一绘图区同时使用两个独立纵向尺度。",
+        "action": "用上下分图分别呈现。"
+      },
+      "validity": {
+        "effective_from": "2026-06-18",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "overrides": [],
+        "exceptions_to": []
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-v2-2.5",
+          "量级相差5倍以上的指标拆成上下两图，团队不用双纵轴。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v2",
+          "needle": "量级相差 5 倍以上的指标不放在同一个纵轴上，拆成上下两张图。不使用双纵轴。"
+        }
+      ]
+    },
+    {
+      "id": "team-v1-2.3",
+      "statement": "单位写在纵轴上方。",
+      "status": "reference_only",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "旧模板常量FOOTER_GAP仍为40，附TODO待按v2更新。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {
+        "duplicates": [
+          "team-v2-2.4"
+        ]
+      },
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-template-footer",
+          "旧模板常量FOOTER_GAP仍为40，附TODO待按v2更新。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "2.3 单位写在纵轴上方。"
+        }
+      ]
+    },
+    {
+      "id": "team-v1-4.2",
+      "statement": "旧版只明确A股红涨绿跌。",
+      "status": "superseded",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "旧模板常量FOOTER_GAP仍为40，附TODO待按v2更新。"
+      },
+      "validity": {
+        "effective_from": "2025-03-10",
+        "authority": "published_team_standard"
+      },
+      "relations": {},
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-template-footer",
+          "旧模板常量FOOTER_GAP仍为40，附TODO待按v2更新。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-v1",
+          "needle": "4.2 涨跌色：A 股红涨绿跌。"
+        }
+      ]
+    },
+    {
+      "id": "team-template-unit-align",
+      "statement": "旧模板使用轴线居中对齐单位。",
+      "status": "reference_only",
+      "scope": {
+        "organization": "team-finance",
+        "families": [
+          "infographic"
+        ],
+        "media": [
+          "any"
+        ],
+        "conditions": [],
+        "exceptions": []
+      },
+      "check": {
+        "question": "当前图是否在适用范围内违反本条约定？",
+        "action": "旧模板使用轴线居中对齐单位。"
+      },
+      "validity": {
+        "effective_from": "2026-05-30",
+        "authority": "implementation_snapshot"
+      },
+      "relations": {},
+      "retrieval": {
+        "priority": 80,
+        "keywords": [
+          "team-template-footer",
+          "旧模板常量FOOTER_GAP仍为40，附TODO待按v2更新。"
+        ]
+      },
+      "method": "reviewed_distillation",
+      "evaluation_dependent": false,
+      "citations": [
+        {
+          "source_id": "team-template",
+          "needle": "export const UNIT_ALIGN = \"axis-center\";"
+        }
+      ]
+    }
+  ]
+}

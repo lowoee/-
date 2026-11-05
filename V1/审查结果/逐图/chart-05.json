@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "library_id": "team-only-visual-experiences-v1",
+  "planned_count": 1,
+  "completed_count": 1,
+  "charts": [
+    {
+      "chart_id": "chart-05",
+      "issues": [],
+      "observations": [
+        {
+          "description": "图中七个渠道的名称、顺序和数值均与所附数据及图形源码一致。横向条形从零起绘，按新增用户数降序排列，条末数值清晰，便于在 PC 端复盘报告中比较渠道表现。",
+          "evidence": [
+            "PNG 从上到下标注 186、142、118、87、64、41、23，与所附数据及源码逐项一致。",
+            "横轴从 0 开始；轴标题标明单位为万人，副标题标明来源为模拟数据。"
+          ],
+          "reason_unconfirmed": "无待核实事项；以上为对附图、所附数据及源码的直接核对。"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

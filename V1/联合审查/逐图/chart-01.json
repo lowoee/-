@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "library_id": "team-datawrapper-visual-experiences-v1",
+  "planned_count": 1,
+  "completed_count": 1,
+  "charts": [
+    {
+      "chart_id": "chart-01",
+      "issues": [
+        {
+          "description": "普通柱形图从 95 起画，放大了季度间的差距。三季度的可见柱长约为二季度的 1.58 倍，但原始数值仅比二季度高约 3.7%。",
+          "experience_ids": [
+            "EXP-007"
+          ],
+          "severity": "high",
+          "location": "PNG 纵轴与四根柱的底边，源码 spec.encoding.y.scale",
+          "suggestion": "将柱形图的纵轴下限设为 0，并用实际差幅表述三季度相对二季度的领先程度。",
+          "evidence": [
+            "CSV 与 spec.data.values 中一至四季度的数值依次为 98.2、101.5、105.3、100.8，与 PNG 中柱顶位置和季度顺序一致。",
+            "PNG 最低标注刻度为 96，四根柱均在其下方的绘图区底边齐平。源码将纵轴范围固定为 [95, 106]，设置 zero: false 和 mark.clip: true。"
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "description": "标题中的「大幅领先」缺少业务判断标准。三季度确为全年最高，较次高的二季度高约 3.7%。",
+          "evidence": [
+            "PNG 标题使用「大幅领先」。CSV 和源码均显示三季度为 105.3，二季度为 101.5。"
+          ],
+          "reason_unconfirmed": "用途说明未提供判断「大幅」的业务阈值，现有经验也未规定该措辞的判定标准。"
+        },
+        {
+          "description": "「新增开户数」的计量单位和小数精度待核实。",
+          "evidence": [
+            "PNG 纵轴和 CSV 字段均写作「新增开户数」，未标明单位或量级。CSV 与源码中的四个数值均带一位小数。"
+          ],
+          "reason_unconfirmed": "所给材料未定义计量单位、缩放口径或小数位的含义，无法据此确定应标注的单位和精度。"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

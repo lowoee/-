@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "library_id": "team-datawrapper-visual-experiences-v1",
+  "planned_count": 1,
+  "completed_count": 1,
+  "charts": [
+    {
+      "chart_id": "chart-20",
+      "issues": [],
+      "observations": [
+        {
+          "description": "手机卡片的 375 宽度要求所对应的容器层级有待确认。",
+          "evidence": [
+            "用途说明给出卡片宽 375pt。PNG 整幅宽 1125 像素，白色圆角面板左右各留约 30 像素。",
+            "源码中 `body` 宽 375 CSS px，`.card` 左右外边距各 10 CSS px，白色面板宽 355 CSS px，左右内边距各 16 CSS px。PNG 与源码的横向尺寸呈 3 倍关系。"
+          ],
+          "reason_unconfirmed": "需确认团队条款中的「卡片宽 375」指外层画布还是白色圆角面板，以及 App 中 375pt 与源码 CSS 像素的对应关系。"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

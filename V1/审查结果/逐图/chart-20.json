@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "library_id": "team-only-visual-experiences-v1",
+  "planned_count": 1,
+  "completed_count": 1,
+  "charts": [
+    {
+      "chart_id": "chart-20",
+      "issues": [],
+      "observations": [
+        {
+          "description": "数值与图形核对一致。零售金融、公司金融、金融市场和其他的占比分别为 52.4%、31.8%、12.1% 和 3.7%，合计 100.0%，支持主标题的“贡献过半”。",
+          "evidence": [
+            "PNG、数据表与 SVG 的类目、顺序和数值一致。",
+            "四根条从同一基线出发，源码中的条长与占比成比例，只有绘图取整造成的微小差异。"
+          ],
+          "reason_unconfirmed": "数值和图形已核对，无待核实项。"
+        },
+        {
+          "description": "移动端卡片宽度的测量口径待核实。",
+          "evidence": [
+            "PNG 总宽 1125 像素，与源码 375 CSS px 的外层画布相差 3 倍。",
+            "白色面板因左右各 10 CSS px 的装饰外边距而宽 355 CSS px，面板左右内边距各为 16 CSS px。"
+          ],
+          "reason_unconfirmed": "需确认用途说明中的 375pt 对应外层画布还是白色面板，以及 App 中逻辑点与 CSS px 的映射。现有证据不足以判定尺寸错误。"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

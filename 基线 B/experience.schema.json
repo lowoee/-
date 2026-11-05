@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "rule", "check", "applies_when", "tags", "sources", "status"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^EXP-\\d{3}$" },
+    "rule": { "type": "string", "minLength": 10 },
+    "check": { "type": "string", "minLength": 10 },
+    "applies_when": { "type": "string", "minLength": 5 },
+    "tags": {
+      "type": "object",
+      "required": ["chart_type", "medium"],
+      "properties": {
+        "chart_type": { "type": "array", "items": { "type": "string" } },
+        "medium": { "type": "array", "items": { "type": "string" } },
+        "domain": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "severity": { "enum": ["critical", "major", "minor"] },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["reference", "locator", "excerpt"],
+        "properties": {
+          "reference": { "type": "string" },
+          "locator": { "type": "string" },
+          "excerpt": { "type": "string" },
+          "retrieved": { "type": "string", "format": "date" }
+        }
+      }
+    },
+    "resolution": { "type": "string" },
+    "status": { "enum": ["active", "superseded"] },
+    "confidence": { "type": ["string", "null"], "enum": ["high", "medium", null] }
+  }
+}

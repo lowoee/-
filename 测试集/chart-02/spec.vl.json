@@ -1,0 +1,171 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "🎉 理财用户规模再创新高",
+    "subtitle": "单位：万人｜来源：模拟数据",
+    "fontSize": 20,
+    "color": "#B45309"
+  },
+  "width": 480,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "年份",
+      "type": "ordinal",
+      "axis": {
+        "labelAngle": 0,
+        "title": null,
+        "labelFontSize": 13
+      }
+    },
+    "y": {
+      "field": "用户数",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          860
+        ]
+      },
+      "axis": {
+        "title": "理财用户数（万人）",
+        "grid": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "width": {
+          "band": 0.62
+        },
+        "cornerRadiusTopLeft": 10,
+        "cornerRadiusTopRight": 10,
+        "color": {
+          "gradient": "linear",
+          "x1": 0,
+          "y1": 1,
+          "x2": 0,
+          "y2": 0,
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#FDE68A"
+            },
+            {
+              "offset": 1,
+              "color": "#F59E0B"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -12,
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#92400E"
+      },
+      "encoding": {
+        "text": {
+          "field": "用户数"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -36,
+        "fontSize": 20
+      },
+      "encoding": {
+        "text": {
+          "value": "💰"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 18,
+        "fontWeight": "bold",
+        "color": "#DC2626"
+      },
+      "encoding": {
+        "x": {
+          "value": 300
+        },
+        "y": {
+          "value": 22
+        },
+        "text": {
+          "value": "🚀 2025 年同比增长 32%！"
+        }
+      }
+    }
+  ],
+  "data": {
+    "values": [
+      {
+        "年份": "2020",
+        "用户数": 320
+      },
+      {
+        "年份": "2021",
+        "用户数": 385
+      },
+      {
+        "年份": "2022",
+        "用户数": 410
+      },
+      {
+        "年份": "2023",
+        "用户数": 468
+      },
+      {
+        "年份": "2024",
+        "用户数": 540
+      },
+      {
+        "年份": "2025",
+        "用户数": 712
+      }
+    ]
+  },
+  "config": {
+    "font": "PingFang SC",
+    "background": "#FFFBF2",
+    "padding": 16,
+    "title": {
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555555",
+      "anchor": "start",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "titleFontWeight": "normal",
+      "labelColor": "#333333",
+      "titleColor": "#333333"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "view": {
+      "stroke": null,
+      "fill": "#FFF4DC"
+    }
+  }
+}

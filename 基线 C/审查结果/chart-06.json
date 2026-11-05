@@ -1,0 +1,26 @@
+{
+  "chart_id": "chart-06",
+  "issues": [
+    {
+      "description": "连线把无连续顺序的行业串成走势，线段的峰谷和坡度随行业排列而改变，干扰同日估值比较。",
+      "experience_ids": [],
+      "location": "行业点之间的蓝色连线",
+      "evidence": [
+        "brief.md 要求比较各行业板块估值，图面统计日为 2025-12-31。",
+        "spec.vl.json 对名义型行业使用 line 并设 sort:null，图上相邻的煤炭、电子、计算机分别为 8.1、42.5、56.8 倍。"
+      ],
+      "suggestion": "改成按市盈率排序的横向点图或从零起算的横向条形图。"
+    },
+    {
+      "description": "多个行业名相互覆盖，读者难以把估值点对应到正确行业。",
+      "experience_ids": [],
+      "location": "横轴行业标签",
+      "evidence": [
+        "图中「非银金融」「房地产」「建筑装饰」等相邻文字挤在一起。",
+        "spec.vl.json 将 12 个行业排在 420px 宽的绘图区，标签水平显示且 labelOverlap 为 false。"
+      ],
+      "suggestion": "将行业名放在纵向类目轴上，为每个标签留出完整的一行。"
+    }
+  ],
+  "observations": []
+}

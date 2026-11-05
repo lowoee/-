@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["chart_id", "issues", "observations"],
+  "properties": {
+    "chart_id": {"type": "string"},
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["description", "experience_ids", "severity", "location", "suggestion", "evidence"],
+        "properties": {
+          "description": {"type": "string"},
+          "experience_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "severity": {"enum": ["low", "medium", "high"]},
+          "location": {"type": "string"}, "suggestion": {"type": "string"},
+          "evidence": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["description", "evidence", "reason_unconfirmed"],
+        "properties": {"description": {"type": "string"}, "evidence": {"type": "array", "items": {"type": "string"}}, "reason_unconfirmed": {"type": "string"}}
+      }
+    }
+  }
+}

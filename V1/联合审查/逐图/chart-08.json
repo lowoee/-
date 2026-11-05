@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "library_id": "team-datawrapper-visual-experiences-v1",
+  "planned_count": 1,
+  "completed_count": 1,
+  "charts": [
+    {
+      "chart_id": "chart-08",
+      "issues": [
+        {
+          "description": "四对基金共用相同的线色和线型。读者仅凭右侧图例无法确定每对基金各对应哪条线，交叉后也容易跟错，直接影响逐只基金的走势比较。",
+          "experience_ids": [
+            "EXP-014"
+          ],
+          "severity": "high",
+          "location": "PNG 右侧基金图例及主绘图区，尤其是 1–7 月净值约 0.95–1.10 的密集区域。",
+          "suggestion": "在静态月报中为曲线末端直接标注基金名，标签拥挤时用引线连接。若交叉密集处仍难以追踪，可将 14 只基金拆为统一横纵刻度的小多图。",
+          "evidence": [
+            "PNG 图例中，基金 A 与 K 同为蓝色，B 与 L 同为橙色，C 与 M 同为红色，D 与 N 同为青绿色，且每对的图例符号都是同样的实线。",
+            "12 月 26 日，基金 D 和 N 的数据分别为 0.9755 和 1.5521，对应图中约 0.98 和 1.55 的两条青绿色曲线末端。图例无法区分这两个末端分别属于哪只基金。",
+            "源码仅用 encoding.color 按基金区分系列，未配置线型、直接标签或交互高亮。"
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "description": "纵轴所用的「元」及数据是否以首周为基准仍待核实。",
+          "evidence": [
+            "PNG 纵轴及源码 encoding.y.axis.title 均写作「单位净值（元）」。",
+            "所给 CSV 仅含「日期」「基金」「单位净值」三列。14 只基金在 2025-01-03 的值均为 1。"
+          ],
+          "reason_unconfirmed": "共同起点既可能是模拟时设定的每份净值，也可能是将首周设为 1 后的相对序列。所给材料未定义计量单位或生成口径，需核对模拟数据的字段说明。"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

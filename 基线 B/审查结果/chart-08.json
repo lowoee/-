@@ -1,0 +1,15 @@
+{
+  "chart_id": "chart-08",
+  "issues": [
+    {
+      "description": "四对基金共享颜色和线型，线路交叉后无法可靠追踪单只基金。",
+      "experience_ids": [],
+      "location": "右侧图例和主图交叉密集区",
+      "evidence": [
+        "图例中 A/K、B/L、C/M、D/N 分别同色。源码只用基金字段编码颜色，CSV 共 14 只基金、728 条周记录。"
+      ],
+      "suggestion": "使用共享轴范围的小多图，按年末净值排序并直接标注基金名。"
+    }
+  ],
+  "observations": []
+}

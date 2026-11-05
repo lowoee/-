@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "library_id": "team-only-visual-experiences-v1",
+  "planned_count": 1,
+  "completed_count": 1,
+  "charts": [
+    {
+      "chart_id": "chart-19",
+      "issues": [
+        {
+          "description": "纵轴单位“亿元”的左缘比刻度数字的最左缘偏右。",
+          "experience_ids": [
+            "team-v2-2.4"
+          ],
+          "severity": "low",
+          "location": "绘图区左上角",
+          "suggestion": "将单位文字设为左对齐，并把起点放在刻度文字的最左缘。",
+          "evidence": [
+            "PNG 中“亿元”比刻度数字左缘约右移 32 个图像像素。",
+            "SVG 将单位居中锚定在 x=25，刻度文字右对齐在 x=19。"
+          ]
+        },
+        {
+          "description": "柱体金额标注混用两位和三位小数。原始数据可以闭合，期末显示为 1.76 亿元是正常舍入。",
+          "experience_ids": [
+            "team-v2-3.1"
+          ],
+          "severity": "low",
+          "location": "瀑布图柱体金额标注",
+          "suggestion": "保留原始数据计算柱高，将所有金额标签统一为两位小数；必要时注明标注值已舍入。",
+          "evidence": [
+            "PNG 和 SVG 中，其他损益为 −0.083、少数股东为 +0.065，其余柱体金额标注均为两位小数。",
+            "2.36 − 0.74 − 0.21 + 0.09 − 0.083 + 0.28 + 0.065 = 1.762 亿元；毛利减少 0.74 亿元，确为最大降项。"
+          ]
+        },
+        {
+          "description": "手机端多处类目标签在词中间断行，影响扫读。",
+          "experience_ids": [
+            "team-v2-6.1"
+          ],
+          "severity": "low",
+          "location": "横轴类目标签",
+          "suggestion": "按词边界换行，如“上年／归母”“期间／费用”“其他／损益”；无法自然分行时，调整布局或使用规范附录中的简称。",
+          "evidence": [
+            "PNG 可见“上年归／母”“期间费／用”“财务费／用”“其他损／益”“少数股／东”“本期归／母”，与 SVG 中 tspan 的拆分一致。"
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "description": "手机卡片的宽度和内边距需按实际测量对象核对，目前不能确认存在尺寸错误。",
+          "evidence": [
+            "用途说明标注 375pt；源码外层画布为 375 CSS px，白色内框左右外边距各 10 CSS px，左右内边距各 16 CSS px。",
+            "PNG 宽 1125 像素，与 375 CSS px 画布按 3 倍输出相符。"
+          ],
+          "reason_unconfirmed": "需确认团队规范中的卡片指外层画布还是白色内框，以及 App 的 pt 与此处 CSS px 如何对应。"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

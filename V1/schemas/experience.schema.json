@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Visual experience",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "statement", "status", "scope", "check", "retrieval", "validity", "relations", "evidence", "provenance"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^(?:[a-z][a-z0-9.-]*|EXP-[0-9]+)$"},
+    "title": {"type": "string", "minLength": 2},
+    "statement": {"type": "string", "minLength": 4},
+    "status": {"enum": ["active", "reference_only", "superseded", "needs_review", "rejected"]},
+    "scope": {
+      "type": "object", "additionalProperties": false,
+      "required": ["organization", "families", "media", "categories", "conditions", "exceptions"],
+      "properties": {
+        "organization": {"type": "string"},
+        "families": {"type": "array", "minItems": 1, "items": {"enum": ["any", "statistical", "infographic"]}},
+        "media": {"type": "array", "minItems": 1, "items": {"enum": ["any", "mobile", "desktop", "large_screen"]}},
+        "categories": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "conditions": {"type": "array", "items": {"type": "string"}},
+        "exceptions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "check": {
+      "type": "object", "additionalProperties": false,
+      "required": ["question", "evidence_needed", "pass_condition", "fail_condition", "action"],
+      "properties": {
+        "question": {"type": "string"},
+        "evidence_needed": {"type": "array", "items": {"type": "string"}},
+        "pass_condition": {"type": "string"},
+        "fail_condition": {"type": "string"},
+        "action": {"type": "string"}
+      }
+    },
+    "retrieval": {
+      "type": "object", "additionalProperties": false, "required": ["keywords", "priority"],
+      "properties": {"keywords": {"type": "array", "items": {"type": "string"}}, "priority": {"type": "integer", "minimum": 0, "maximum": 100}}
+    },
+    "validity": {
+      "type": "object", "additionalProperties": false, "required": ["effective_from", "authority"],
+      "properties": {"effective_from": {"type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}, "authority": {"type": "string"}}
+    },
+    "relations": {
+      "type": "object", "additionalProperties": false, "required": ["overrides", "exceptions_to", "duplicates"],
+      "properties": {
+        "overrides": {"type": "array", "items": {"type": "string"}},
+        "exceptions_to": {"type": "array", "items": {"type": "string"}},
+        "duplicates": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "evidence": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["source_id", "start_line", "end_line", "quote", "interpretation"],
+        "properties": {
+          "source_id": {"type": "string"}, "start_line": {"type": "integer", "minimum": 1},
+          "end_line": {"type": "integer", "minimum": 1}, "quote": {"type": "string", "minLength": 2},
+          "interpretation": {"type": "string"}
+        }
+      }
+    },
+    "provenance": {
+      "type": "object", "additionalProperties": false, "required": ["method", "evaluation_dependent"],
+      "properties": {"method": {"type": "string"}, "evaluation_dependent": {"type": "boolean"}, "converted_from": {"type": "string"}}
+    }
+  }
+}

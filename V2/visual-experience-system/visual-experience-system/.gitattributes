@@ -1,0 +1,3 @@
+# Keep source hashes and the historical result stable across platforms.
+sources/** -text
+results/chart-review-ft-vocabulary.json -text

@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "ft-card-composition-selection",
+      "path": "ft/capabilities/composition-selection.md",
+      "title": "composition-selection",
+      "kind": "reference_document",
+      "sha256": "ff00c5c19aacf2687058b54eea6cc21762b5ac11e16aba9d5f138248c9ca5522",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "ft-card-correlation-selection",
+      "path": "ft/capabilities/correlation-selection.md",
+      "title": "correlation-selection",
+      "kind": "reference_document",
+      "sha256": "61a7d46669d25c092e1eeee19c0ee96bf10c623479db184ecb76e3c7f078d4df",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "ft-card-deviation-selection",
+      "path": "ft/capabilities/deviation-selection.md",
+      "title": "deviation-selection",
+      "kind": "reference_document",
+      "sha256": "5a0a7eb23fad7da54bb01489fac7814bafb3fdb586666dcfe9a22326adb3c58e",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "ft-card-distribution-selection",
+      "path": "ft/capabilities/distribution-selection.md",
+      "title": "distribution-selection",
+      "kind": "reference_document",
+      "sha256": "f2716c77b42c32471c87ca3d8ca2f3d663d59d7469b8842e91f753d9565254b7",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "ft-card-flow-selection",
+      "path": "ft/capabilities/flow-selection.md",
+      "title": "flow-selection",
+      "kind": "reference_document",
+      "sha256": "7f7b2a9440fa5447712175714065411a7b999270471d452c6b681969a14a1db2",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "ft-card-magnitude-selection",
+      "path": "ft/capabilities/magnitude-selection.md",
+      "title": "magnitude-selection",
+      "kind": "reference_document",
+      "sha256": "d70fd5c1e5cf122aaa7d98535a2b643b33d84590a973502a1fae378c3969b304",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "ft-card-ranking-selection",
+      "path": "ft/capabilities/ranking-selection.md",
+      "title": "ranking-selection",
+      "kind": "reference_document",
+      "sha256": "f4f07a9f972f1357b94c0a2ce1a221bfc537ad37e49f5a66b026b26eb3658ce3",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "ft-card-relationship-routing",
+      "path": "ft/capabilities/relationship-routing.md",
+      "title": "relationship-routing",
+      "kind": "reference_document",
+      "sha256": "d619add4090fd3c9ee9e43858f53f7ef92d80c0981f9c6d9932113f1034f4649",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "ft-card-spatial-selection",
+      "path": "ft/capabilities/spatial-selection.md",
+      "title": "spatial-selection",
+      "kind": "reference_document",
+      "sha256": "3b6169492a9823e640b075f2c6f4274d73d1f2969ce6d17af1702a36f44b6903",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "ft-card-time-selection",
+      "path": "ft/capabilities/time-selection.md",
+      "title": "time-selection",
+      "kind": "reference_document",
+      "sha256": "133467799316c2aab061042f601ae858ce76cf08540498c85681be129c318978",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "ft-readme",
+      "path": "ft/README.md",
+      "title": "README",
+      "kind": "reference_document",
+      "sha256": "1ad8bb068ad5c71361c3e3b8765b5e30b9b06af6ca52ba1864e4ce7725da4495",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。",
+      "url": "https://github.com/Financial-Times/chart-doctor/blob/befb9cba21849432a4029d0cfdda938819ae733f/visual-vocabulary/README.md",
+      "revision": "befb9cba21849432a4029d0cfdda938819ae733f",
+      "license_note": "仓库根有MIT声明，Visual Vocabulary README另有FT保留版权声明；公开再分发前核对适用范围。"
+    },
+    {
+      "id": "archive-REPOSITORY_LICENSE",
+      "path": "ft/REPOSITORY_LICENSE",
+      "title": "REPOSITORY_LICENSE",
+      "kind": "reference_document",
+      "sha256": "e8e74e1589e75389a6fc561a5b4e7333ff4c72ba6cd0afe034a1b796b30f215c",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "team-readme",
+      "path": "team/README.md",
+      "title": "README",
+      "kind": "team_document",
+      "sha256": "0274a037368155abc159eceda4c2fb486129851b028afaf72b43257c2e1219e8",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "team-v1",
+      "path": "team/信息图制作规范-v1.md",
+      "title": "信息图制作规范-v1",
+      "kind": "team_document",
+      "sha256": "3afdd31bc01f131c58b8954ed74af7574ffe528519d6fb7323fef1c565b070d0",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "team-v2",
+      "path": "team/信息图制作规范-v2.md",
+      "title": "信息图制作规范-v2",
+      "kind": "team_document",
+      "sha256": "d53dae141254fb79f0c6e52d55788ccc1b01133f70555363a2546dc0b49bc156",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "team-template",
+      "path": "team/模板代码摘录.md",
+      "title": "模板代码摘录",
+      "kind": "team_document",
+      "sha256": "015269976ac0ccfacb70eb54cb29ac713b2757d9bb4c97f0941f0316ea386e5d",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "team-decisions",
+      "path": "team/群聊决议摘录.md",
+      "title": "群聊决议摘录",
+      "kind": "team_document",
+      "sha256": "dc316f1f627393d3072083c5b797fbdb9df6b30fe85058b82e38996a863443a2",
+      "evaluation_material": false,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "team-reviews",
+      "path": "team/评审意见摘录.md",
+      "title": "评审意见摘录",
+      "kind": "team_document",
+      "sha256": "9c903e1daf7bebdaf33113e4aae4e91f9261c4b8ca5575c5358f8f9990fdfb66",
+      "evaluation_material": true,
+      "limitations": "经验用途与出处分别核对；复制文件不等于已证明方法普适有效。"
+    },
+    {
+      "id": "dw-review-30",
+      "path": "datawrapper-review-30.json",
+      "title": "Datawrapper reviewed experiences",
+      "kind": "published_review_snapshot",
+      "sha256": "d7e473fa58a16caadaae27b17d74d14696a0f5fa609f88889db06f5bc0370d3c",
+      "evaluation_material": false
+    }
+  ]
+}

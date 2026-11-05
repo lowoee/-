@@ -1,0 +1,24 @@
+{
+  "chart_id": "chart-01",
+  "issues": [
+    {
+      "description": "截断的柱长夸大三季度的领先幅度，主标题进一步强化了这一印象。",
+      "experience_ids": [],
+      "location": "纵轴、柱体和主标题",
+      "evidence": [
+        "spec.vl.json 将纵轴设为 [95,106] 且 zero 为 false。CSV 中三季度 105.3 仅比二季度 101.5 高约 3.7%，图上可见柱长约为其 1.6 倍。"
+      ],
+      "suggestion": "将柱轴从零起绘制，标注季度值，并将标题改为“三季度新增开户数最高”。"
+    },
+    {
+      "description": "开户数的计量单位不明，读者无法判断实际规模。",
+      "experience_ids": [],
+      "location": "纵轴及副标题",
+      "evidence": [
+        "图中只写“新增开户数”，CSV 数值含 98.2 等小数，源码没有单位。"
+      ],
+      "suggestion": "核实计量单位并写入轴标题。"
+    }
+  ],
+  "observations": []
+}

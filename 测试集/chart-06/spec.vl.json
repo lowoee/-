@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "各行业板块平均市盈率",
+    "subtitle": "统计日：2025-12-31｜来源：模拟数据"
+  },
+  "width": 420,
+  "height": 280,
+  "mark": {
+    "type": "line",
+    "color": "#4C78A8",
+    "strokeWidth": 2,
+    "point": {
+      "filled": true,
+      "size": 50,
+      "color": "#4C78A8"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "行业",
+      "type": "nominal",
+      "sort": null,
+      "axis": {
+        "labelAngle": 0,
+        "labelOverlap": false,
+        "title": null
+      }
+    },
+    "y": {
+      "field": "平均市盈率",
+      "type": "quantitative",
+      "axis": {
+        "title": "平均市盈率（倍）"
+      }
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "行业": "银行",
+        "平均市盈率": 5.8
+      },
+      {
+        "行业": "非银金融",
+        "平均市盈率": 18.6
+      },
+      {
+        "行业": "房地产",
+        "平均市盈率": 14.2
+      },
+      {
+        "行业": "建筑装饰",
+        "平均市盈率": 9.7
+      },
+      {
+        "行业": "钢铁",
+        "平均市盈率": 12.3
+      },
+      {
+        "行业": "煤炭",
+        "平均市盈率": 8.1
+      },
+      {
+        "行业": "电子",
+        "平均市盈率": 42.5
+      },
+      {
+        "行业": "计算机",
+        "平均市盈率": 56.8
+      },
+      {
+        "行业": "医药生物",
+        "平均市盈率": 31.4
+      },
+      {
+        "行业": "食品饮料",
+        "平均市盈率": 24.9
+      },
+      {
+        "行业": "家用电器",
+        "平均市盈率": 15.3
+      },
+      {
+        "行业": "汽车",
+        "平均市盈率": 22.7
+      }
+    ]
+  },
+  "config": {
+    "font": "PingFang SC",
+    "background": "#ffffff",
+    "padding": 16,
+    "title": {
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555555",
+      "anchor": "start",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "titleFontWeight": "normal",
+      "labelColor": "#333333",
+      "titleColor": "#333333"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

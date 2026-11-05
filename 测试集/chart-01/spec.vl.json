@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "2025 年三季度新增开户数大幅领先",
+    "subtitle": "来源：模拟数据"
+  },
+  "width": 420,
+  "height": 300,
+  "mark": {
+    "type": "bar",
+    "color": "#4C78A8",
+    "width": {
+      "band": 0.6
+    },
+    "clip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "季度",
+      "type": "nominal",
+      "sort": null,
+      "axis": {
+        "labelAngle": 0,
+        "title": null
+      }
+    },
+    "y": {
+      "field": "新增开户数",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          95,
+          106
+        ],
+        "zero": false
+      },
+      "axis": {
+        "title": "新增开户数",
+        "tickCount": 6
+      }
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "季度": "一季度",
+        "新增开户数": 98.2
+      },
+      {
+        "季度": "二季度",
+        "新增开户数": 101.5
+      },
+      {
+        "季度": "三季度",
+        "新增开户数": 105.3
+      },
+      {
+        "季度": "四季度",
+        "新增开户数": 100.8
+      }
+    ]
+  },
+  "config": {
+    "font": "PingFang SC",
+    "background": "#ffffff",
+    "padding": 16,
+    "title": {
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555555",
+      "anchor": "start",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "titleFontWeight": "normal",
+      "labelColor": "#333333",
+      "titleColor": "#333333"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

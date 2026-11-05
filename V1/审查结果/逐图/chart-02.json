@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "library_id": "team-only-visual-experiences-v1",
+  "planned_count": 1,
+  "completed_count": 1,
+  "charts": [
+    {
+      "chart_id": "chart-02",
+      "issues": [
+        {
+          "description": "PNG 的整体画幅约为 1.40:1，与年会大屏的 16:9 不符。等比铺满会裁切画面，完整显示则会在左右留空。",
+          "experience_ids": [],
+          "severity": "medium",
+          "location": "整张 PNG 的画幅",
+          "suggestion": "按 16:9 重新排版并导出，保留标题、轴标签和注释的安全边距，避免直接拉伸原图。",
+          "evidence": [
+            "用途说明指定年会现场大屏（16:9）；附图为 1116 × 796 像素。",
+            "源码中的 480 × 300 是绘图区尺寸，最终画幅还包含标题、坐标轴和内边距。"
+          ]
+        }
+      ],
+      "observations": []
+    }
+  ],
+  "errors": []
+}

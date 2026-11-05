@@ -1,0 +1,1438 @@
+[
+  {
+    "id": "EXP-001",
+    "rule": "时间折线的数据方向应让日期对应横轴、实体对应系列。",
+    "check": "逐项核对日期、实体、数值的字段绑定，检查是否误把实体顺序连成时间趋势。",
+    "applies_when": "任务是跟踪多个实体随时间的变化。",
+    "tags": {
+      "chart_type": [
+        "line",
+        "area"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-your-first-line-chart",
+        "locator": "pages/ACA-b08952db2e25.txt#B52",
+        "excerpt": "Transpose",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-encoding-axes",
+    "scope_variants": [
+      {
+        "applies_when": "任务是跟踪多个实体随时间的变化。",
+        "check": "逐项核对日期、实体、数值的字段绑定，检查是否误把实体顺序连成时间趋势。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-002",
+    "rule": "时间相关标题与说明应能还原实际展示窗口及实体的观测日期。",
+    "check": "读取可见时间轴和各项日期，核对标题所称期间、同年或最近观测。局部窗口不能单独证明未展示期间的持续趋势。",
+    "applies_when": "图裁剪时间范围，或拼接各实体最近一期但不完全同年的数据；已逐项说明日期时放行。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar",
+        "line",
+        "area"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/examples-of-datawrapper-bar-charts",
+        "locator": "pages/ACA-d78c79921152.txt#B1；案例图 https://datawrapper.dwcdn.net/FdWeD/full.png",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/FdWeD/full.png",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "European countries with lowest & highest voter turnout",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-line-chart",
+        "locator": "pages/ACA-0dfe73c6f352.txt#B30",
+        "excerpt": "Custom range",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "text-annotation-conclusion",
+    "scope_variants": [
+      {
+        "applies_when": "条形拼合各国最近一次选举而日期不完全相同。",
+        "check": "对照实体标签上的年份与标题，不能将不同年份的最近观测说成同年横截面。"
+      },
+      {
+        "applies_when": "折线图改变了默认起止日期。",
+        "check": "读取可见横轴最早最晚日期，核对标题所称期间及支持结论的数据窗口。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-003",
+    "rule": "跨区域比较同单位绝对量或变化幅度时，应先核对各区域的刻度范围。",
+    "check": "记录参与比较的面板或单元格范围、标记高度和原始值。分别核对原值及变化率，查找仅凭同高、同斜率推出数值相同的语句。独立轴可以保留，但必须让读者辨认其差异。",
+    "applies_when": "分列条形、分面柱线图或表格微图中，任务涉及跨区域的数量或幅度比较。只看区域内方向且独立轴明确时放行。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar",
+        "line",
+        "area",
+        "heatmap",
+        "table"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-split-bar-chart",
+        "locator": "pages/ACA-b37112373602.txt#B45",
+        "excerpt": "independent scales",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-multiple-columns-chart",
+        "locator": "pages/ACA-09f080102841.txt#B76",
+        "excerpt": "independent",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-small-multiple-line-charts",
+        "locator": "pages/ACA-e3ae1d7777c0.txt#B64",
+        "excerpt": "independent scales",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-add-bar-charts-line-charts-to-tables",
+        "locator": "pages/ACA-182e5873c974.txt#B29",
+        "excerpt": "same values for the y-axis",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/blog/what-to-consider-when-creating-small-multiple-line-charts",
+        "locator": "pages/BLOG-c51206f2bb84.txt#B15",
+        "excerpt": "different y-axis",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/blog/guide-what-to-consider-when-creating-tables",
+        "locator": "pages/BLOG-22bde2d01a5d.txt#B21",
+        "excerpt": "not comparable",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-encoding-axes",
+    "scope_variants": [
+      {
+        "applies_when": "读者要跨列比较同单位绝对量。",
+        "check": "核对每列轴范围与原始值，检查同长条是否被错误解释为相等。"
+      },
+      {
+        "applies_when": "分面柱图用于比较不同系列的绝对规模。",
+        "check": "对照各面板刻度和顶值，独立刻度不能支持柱高代表同一数量的结论。"
+      },
+      {
+        "applies_when": "各面板量级不同且采用独立缩放。",
+        "check": "核对每个面板的轴标签和说明，定位把同高或同斜率误当成同量级或同增长的文字。"
+      },
+      {
+        "applies_when": "正文或任务要求比较各行波动大小。",
+        "check": "读取每行微图的范围和高度，按原值核对幅度比较；独立归一化仅支持形状观察。"
+      },
+      {
+        "applies_when": "各面板单独缩放且读者可能跨面板比较。",
+        "check": "读取范围提示与面板轴，核查文案是否只看方向或误比斜率与绝对量。"
+      },
+      {
+        "applies_when": "微折线各行独立填满单元格。",
+        "check": "结合原始数值和范围检查文案，发现只凭视觉起伏比较幅度时指出具体两行。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-004",
+    "rule": "100%堆叠应按每个整体自身的分母归一化。",
+    "check": "对每行计算各部分除以行和，核对标签、条段和百分号，记录零分母待核。",
+    "applies_when": "条形声明展示每行构成百分比。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-stacked-bar-chart",
+        "locator": "pages/ACA-0473ca8a4841.txt#B40",
+        "excerpt": "Stack percentages",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "data-semantics",
+    "scope_variants": [
+      {
+        "applies_when": "条形声明展示每行构成百分比。",
+        "check": "对每行计算各部分除以行和，核对标签、条段和百分号，记录零分母待核。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-005",
+    "rule": "子弹条中实际值与目标值应使用可比的计量单位。",
+    "check": "核对内外条单位、币种与量级，先换算再比较长度。",
+    "applies_when": "内外条共用同一个数值轴比较目标完成。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-bullet-bar-chart",
+        "locator": "pages/ACA-4543fe9a4c3a.txt#B8",
+        "excerpt": "same measure",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "data-semantics",
+    "scope_variants": [
+      {
+        "applies_when": "内外条共用同一个数值轴比较目标完成。",
+        "check": "核对内外条单位、币种与量级，先换算再比较长度。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-006",
+    "rule": "精确取数任务所需的读数方式应在交付媒介实际可用。",
+    "check": "选取所需读数逐一尝试恢复其精确值。核对提示框、标签、轴和配表在实际媒介是否可用，不把静态图缺悬停单独当问题。",
+    "applies_when": "分组条形或热力表等要求准确读值；网页可用提示框，静态图需标签、可读轴或配套数表。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar",
+        "heatmap",
+        "table"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-grouped-bar-chart",
+        "locator": "pages/ACA-5dc4818261bb.txt#B57",
+        "excerpt": "Show values",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-heatmap",
+        "locator": "pages/ACA-6d86aa0c19c2.txt#B20",
+        "excerpt": "Show values in tooltips",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "infographic-medium",
+    "scope_variants": [
+      {
+        "applies_when": "用途要求读出各组具体数值。",
+        "check": "检查数值标签或当前媒介可用的提示框；静态导出不能用网页悬停补足。"
+      },
+      {
+        "applies_when": "用途要求精确值且格内数字隐藏。",
+        "check": "网页验证提示框，静态版核对数字或配套数表，不能仅凭颜色给出精确数。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-007",
+    "rule": "零基线要求应依据长度或位置编码的区别执行。",
+    "check": "先确认标记类型；长度编码检查零基线，点的位置编码核对可读刻度及任务，不因非零起点单独报错。",
+    "applies_when": "柱形被截断，或点图被质疑未从零开始。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/why-our-column-and-bar-charts-start-at-zero",
+        "locator": "pages/ACA-8abaeac77c1c.txt#B10",
+        "excerpt": "dot plots",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "用户于2026-11-05决定普通柱长与瀑布差值放大按图型、任务分开保留；参见CON-001。",
+    "topic_bucket": "chart-encoding-axes",
+    "scope_variants": [
+      {
+        "applies_when": "柱形被截断，或点图被质疑未从零开始。",
+        "check": "先确认标记类型；长度编码检查零基线，点的位置编码核对可读刻度及任务，不因非零起点单独报错。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-008",
+    "rule": "区间叠加应说明它表示哪种区间及置信水平。",
+    "check": "检查标题、图例或注释是否区分95%置信区间、预测区间与目标区间，缺少定义时记录歧义。；查区间定义、上下界字段和图例，核对所标90%或95%与数据说明。",
+    "applies_when": "条形叠加的范围被用于解释不确定性或目标范围。；柱上有误差线或范围，用途涉及不确定性判断。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/confidence-intervals-error-bars-datawrapper-bar-charts",
+        "locator": "pages/ACA-b2146c378576.txt#B26",
+        "excerpt": "90%",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/confidence-intervals-error-bars-datawrapper-column-charts",
+        "locator": "pages/ACA-0e5e9c515b33.txt#B26",
+        "excerpt": "90%",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-specific",
+    "scope_variants": [
+      {
+        "applies_when": "条形叠加的范围被用于解释不确定性或目标范围。",
+        "check": "检查标题、图例或注释是否区分95%置信区间、预测区间与目标区间，缺少定义时记录歧义。"
+      },
+      {
+        "applies_when": "柱上有误差线或范围，用途涉及不确定性判断。",
+        "check": "查区间定义、上下界字段和图例，核对所标90%或95%与数据说明。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-009",
+    "rule": "长类别名的柱形图应在目标宽度保留可辨标签。",
+    "check": "检查截断、重叠及标签到柱的对应，先尝试换行或横条，不因旋转本身判错。",
+    "applies_when": "窄屏或静态图中长类名影响识别。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-column-chart",
+        "locator": "pages/ACA-8c1d6ca72123.txt#B2",
+        "excerpt": "labels",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "infographic-medium",
+    "scope_variants": [
+      {
+        "applies_when": "窄屏或静态图中长类名影响识别。",
+        "check": "检查截断、重叠及标签到柱的对应，先尝试换行或横条，不因旋转本身判错。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-010",
+    "rule": "堆叠总量或瀑布组贡献注释应等于对应分量的同口径代数和。",
+    "check": "标明每项是流量、余额还是小计。只累加该注释覆盖的分量，瀑布贡献带符号；将结果与注释、起止差交叉核对，避免重复计算汇总项。",
+    "applies_when": "图明确给出总量或组贡献，分量同单位且可加总；有显示舍入时保留容差。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar",
+        "dual_axis",
+        "waterfall"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-stacked-column-chart",
+        "locator": "pages/ACA-a6a22040821a.txt#B62",
+        "excerpt": "Show totals",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/waterfall-chart-examples",
+        "locator": "pages/ACA-2e1e1ca0c73f.txt#B1；案例图 https://datawrapper.dwcdn.net/BPRSN/1/",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/BPRSN/1/",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "Germany’s electricity generation grew by 8.2 TWh",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-specific",
+    "scope_variants": [
+      {
+        "applies_when": "图同时展示部分及总量。",
+        "check": "对照每段数值及总量字段，允许显示舍入误差，检查是否重复加小计或漏项。"
+      },
+      {
+        "applies_when": "瀑布图以分界线标出两个贡献组，并写组增量。",
+        "check": "按组取带符号的变动求和，分别核对分组注释，再验证各组和等于期末减期初。显示舍入需按精度留容差。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-011",
+    "rule": "数值标签应正确区分绝对量、占比和缩写量级。",
+    "check": "取标签原值、统计角色、单位和量级，逐一核对转换。百分比不能附成面积单位，绝对席位需除以总体才得到占比，金额缩写需按轴说明还原。",
+    "applies_when": "堆叠柱与环形等同时有组成值、总量或百分比；只有图上已明示的计量口径才参与核对。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar",
+        "pie",
+        "donut"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/examples-of-datawrapper-stacked-column-charts",
+        "locator": "pages/ACA-8bd04900be0a.txt#B1；案例图 https://datawrapper.dwcdn.net/ltX1J/full.png",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/ltX1J/full.png",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "15 years of US government spending",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/examples-of-datawrapper-pie-donut-charts",
+        "locator": "pages/ACA-bff46fb8b1be.txt#B1；案例图 https://datawrapper.dwcdn.net/7J3x4/full.png",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/7J3x4/full.png",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "Land use in Germany",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-an-election-donut",
+        "locator": "pages/ACA-a7fc73617e58.txt#B1",
+        "excerpt": "absolute values",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "data-semantics",
+    "scope_variants": [
+      {
+        "applies_when": "展示跨期财政总量及组成，段值经过舍入。",
+        "check": "核对货币和万亿量级、段名、总量及舍入容差，避免将标数直接当元。"
+      },
+      {
+        "applies_when": "同图显示总面积与各类用地比例。",
+        "check": "核对百分比标签与绝对面积，百分号后不能误附面积单位并让读者误解。"
+      },
+      {
+        "applies_when": "半环或环形表示议会席位。",
+        "check": "对照各党席位与议席总数，核对显示的100究竟为100席还是100%。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-012",
+    "rule": "分面图中的“使用最多”应明确比较的是组内平台还是平台内群体。",
+    "check": "按标题限定取同代际跨平台，或同平台跨代际比较，核对最大值及分母。",
+    "applies_when": "面板为平台、颜色为代际，标题含最高或最多。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/examples-of-datawrapper-multiple-column-charts",
+        "locator": "pages/ACA-027cf916f1e0.txt#B1；案例图 https://datawrapper.dwcdn.net/vHfcn/full.png",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/vHfcn/full.png",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "German Baby Boomers use Facebook the most",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "text-annotation-conclusion",
+    "scope_variants": [
+      {
+        "applies_when": "面板为平台、颜色为代际，标题含最高或最多。",
+        "check": "按标题限定取同代际跨平台，或同平台跨代际比较，核对最大值及分母。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-013",
+    "rule": "跨组或跨图比较同一类别时，应保持其颜色和系列身份可追踪。",
+    "check": "沿同一类别跨组核对颜色、标签、位置与图例。定位未说明的颜色互换或身份错配；单纯改变排序且标签明确不据此报错。",
+    "applies_when": "分组柱及多饼图等共享类别的图组；明确使用独立图例的不同语义图分别核对。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar",
+        "pie",
+        "donut"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-grouped-column-chart",
+        "locator": "pages/ACA-e31d5d9b9fdc.txt#B1",
+        "excerpt": "side by side",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-multiple-pies-charts",
+        "locator": "pages/ACA-d5b75ada01e6.txt#B34",
+        "excerpt": "same slices",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "color-legend",
+    "scope_variants": [
+      {
+        "applies_when": "多组类别中并排比较同一组系列。",
+        "check": "跟踪同一系列在各组的颜色、图例和位置，核对是否因排序换位产生错误比较。"
+      },
+      {
+        "applies_when": "多个整体放在一起比较相同组成。",
+        "check": "逐图跟踪同类扇区、图例及颜色，记录无说明的颜色互换。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-014",
+    "rule": "用途要求识别的系列应保留清晰的身份对应。",
+    "check": "从图例或就近文字追踪到实际标记，核对字段身份。背景可以弱化，但不能使核心对象不可辨；总体点不能误称为某子组。",
+    "applies_when": "多系列折线或分组点图，任务要求追踪某条线或区分男女、总体等组别。",
+    "tags": {
+      "chart_type": [
+        "line",
+        "area",
+        "scatter",
+        "dot",
+        "range",
+        "arrow"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/examples-of-datawrapper-line-charts",
+        "locator": "pages/ACA-21b9f9d1f1a5.txt#B1；案例图 https://datawrapper.dwcdn.net/XskMo/full.png",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/XskMo/full.png",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "The rise and fall of cigarette consumption",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/examples-of-datawrapper-dot-charts",
+        "locator": "pages/ACA-5ae5d1a02aad.txt#B1；案例图 https://datawrapper.dwcdn.net/0Y37z/full.png",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/0Y37z/full.png",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "Germany is the third-oldest country in the world",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "color-legend",
+    "scope_variants": [
+      {
+        "applies_when": "重点线有直接标名，背景线弱化。",
+        "check": "对用途要求识别的系列逐一检查标名或可用交互，背景弱化不能吞掉核心对象。"
+      },
+      {
+        "applies_when": "一行中三点展示分组和总体统计量。",
+        "check": "检查每种点色与图例，不能把总体点直接当成任一组；平均或中位数是否加权须回到数据定义。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-015",
+    "rule": "坡度图支持首尾变化判断时，应限制对中间路径的推断。",
+    "check": "读取中间观测核对“逐期持续”等用语；只描述首尾净变化可保留简化。",
+    "applies_when": "折线被简化成两个时间点。",
+    "tags": {
+      "chart_type": [
+        "line",
+        "area"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-slope-chart",
+        "locator": "pages/ACA-fa9f681631ac.txt#B1",
+        "excerpt": "start and end",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "text-annotation-conclusion",
+    "scope_variants": [
+      {
+        "applies_when": "折线被简化成两个时间点。",
+        "check": "读取中间观测核对“逐期持续”等用语；只描述首尾净变化可保留简化。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-016",
+    "rule": "分面缺席的时间段应与零值区分。",
+    "check": "核对实际存在期间，检查空白是否被错误填成已观测零；有真实零值时据资料确认。；核对日期覆盖和圆大小，缺日没有原始零值依据时不能计作零。",
+    "applies_when": "某实体只在后半段时间出现。；每个圆代表一日，大小代表当日活动量。",
+    "tags": {
+      "chart_type": [
+        "line",
+        "area",
+        "scatter",
+        "dot",
+        "range",
+        "arrow"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/examples-of-datawrapper-multiple-lines-charts",
+        "locator": "pages/ACA-f38524d649d4.txt#B1；案例图 https://datawrapper.dwcdn.net/4GBh0/full.png",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/4GBh0/full.png",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "Election results in Germany since 1949",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/examples-of-datawrapper-scatter-plots-time",
+        "locator": "pages/ACA-6b21f4cabcb9.txt#B1；案例图 https://datawrapper.dwcdn.net/6vsQM/full.png",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/6vsQM/full.png",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "2 years in one chart",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "data-semantics",
+    "scope_variants": [
+      {
+        "applies_when": "某实体只在后半段时间出现。",
+        "check": "核对实际存在期间，检查空白是否被错误填成已观测零；有真实零值时据资料确认。"
+      },
+      {
+        "applies_when": "每个圆代表一日，大小代表当日活动量。",
+        "check": "核对日期覆盖和圆大小，缺日没有原始零值依据时不能计作零。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-017",
+    "rule": "堆叠面积只应累计同口径且可加总的组成。",
+    "check": "核对各层是否互斥、同单位和同时间口径，重算一个时点外轮廓。",
+    "applies_when": "面积外轮廓被解释为总量。",
+    "tags": {
+      "chart_type": [
+        "line",
+        "area"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-an-area-chart",
+        "locator": "pages/ACA-97855b3bcb77.txt#B1",
+        "excerpt": "total and its shares",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "data-semantics",
+    "scope_variants": [
+      {
+        "applies_when": "面积外轮廓被解释为总量。",
+        "check": "核对各层是否互斥、同单位和同时间口径，重算一个时点外轮廓。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-018",
+    "rule": "误差幅度应先换算成区间上下界，再画置信带。",
+    "check": "逐点核对下界=估计−幅度、上界=估计+幅度；来源已给绝对上下界时直接使用，不再二次加减。",
+    "applies_when": "有点估计和对称误差幅度。",
+    "tags": {
+      "chart_type": [
+        "line",
+        "area"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-show-confidence-intervals-in-datawrapper-line-charts",
+        "locator": "pages/ACA-ef01a6e0359e.txt#B1",
+        "excerpt": "margin of error",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-specific",
+    "scope_variants": [
+      {
+        "applies_when": "有点估计和对称误差幅度。",
+        "check": "逐点核对下界=估计−幅度、上界=估计+幅度；来源已给绝对上下界时直接使用，不再二次加减。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-019",
+    "rule": "独立双轴的同高或交点应回到原值与单位验证。",
+    "check": "分别读取左右轴单位、范围和原值，核对可比性。必要时保持数据不变改变一侧轴范围，查看交点是否随设计移动。两指标的时序变化应按各自值核验。",
+    "applies_when": "双轴图的文案把同高、刻度线对齐或交点解释为数值相等或反超；同量双单位先核对换算。",
+    "tags": {
+      "chart_type": [
+        "dual_axis",
+        "waterfall"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-dual-axis-chart",
+        "locator": "pages/ACA-346db6df310d.txt#B133",
+        "excerpt": "Tick alignment",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/blog/dual-axis-charts-guide",
+        "locator": "pages/BLOG-c912e4376374.txt#B16",
+        "excerpt": "Avoid line crossovers",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-encoding-axes",
+    "scope_variants": [
+      {
+        "applies_when": "双轴图使用对齐网格，文字比较两系列数值。",
+        "check": "分别读取左右轴数值和单位，不能据相同高度或同一格线认为两值相等。"
+      },
+      {
+        "applies_when": "文案把两条独立轴曲线交点解释为数量比较。",
+        "check": "对照单位和原始值，保持数据改变一轴范围看交点是否移动；同量换算的双单位轴另核对换算。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-020",
+    "rule": "多通道图应分别解释每个通道的变量、单位和分母。",
+    "check": "逐项列出位置、颜色、面积或各轴代表的指标及单位。对照图例和数据，记录把数量当占比、把不同分母指标直接比大小的具体结论。",
+    "applies_when": "双轴或气泡散点同时编码不同量纲；存在明确独立说明时按说明核验。",
+    "tags": {
+      "chart_type": [
+        "dual_axis",
+        "waterfall",
+        "scatter",
+        "dot",
+        "range",
+        "arrow"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/dual-axis-charts-examples",
+        "locator": "pages/ACA-a280219c693f.txt#B1；案例图 https://datawrapper.dwcdn.net/OsIiP/1/",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/OsIiP/1/",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "Lung cancer deaths dropped as smoking declined",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/examples-of-datawrapper-scatter-plots",
+        "locator": "pages/ACA-fe4818dc1d48.txt#B1；案例图 https://datawrapper.dwcdn.net/GQDw3/full.png",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/GQDw3/full.png",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "What are the student cities in Germany?",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "color-legend",
+    "scope_variants": [
+      {
+        "applies_when": "图同时显示吸烟量与死亡率等不同量纲，轴刻度可能省略。",
+        "check": "检查就近图例、标签和说明能否将每条线对应到每日每成人支数、每十万人死亡率等口径。已有明确读数通道时不单因隐藏轴刻度报错。"
+      },
+      {
+        "applies_when": "同时以位置、面积和颜色编码多项数值。",
+        "check": "核对每个通道的说明与数据，避免把学生人数的气泡面积解读为学生占比。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-021",
+    "rule": "瀑布图必须区分余额序列和增量序列。",
+    "check": "按余额相邻差或从期初累加增量核对浮动柱和末值，定义不明时待核。",
+    "applies_when": "输入包含累计余额或逐项变动的定义。",
+    "tags": {
+      "chart_type": [
+        "dual_axis",
+        "waterfall"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-waterfall-chart",
+        "locator": "pages/ACA-b695b31316a9.txt#B56",
+        "excerpt": "Running totals",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-specific",
+    "scope_variants": [
+      {
+        "applies_when": "输入包含累计余额或逐项变动的定义。",
+        "check": "按余额相邻差或从期初累加增量核对浮动柱和末值，定义不明时待核。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-022",
+    "rule": "饼图各扇区应属于同一整体且互斥。",
+    "check": "核对是否多选、交叉集合及遗漏项，不能仅通过强制归一化修复重叠口径。",
+    "applies_when": "图明确将各项归为同一100%整体。",
+    "tags": {
+      "chart_type": [
+        "pie",
+        "donut"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-pie-chart",
+        "locator": "pages/ACA-199ad7b6da4d.txt#B9",
+        "excerpt": "exclusive values",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "data-semantics",
+    "scope_variants": [
+      {
+        "applies_when": "图明确将各项归为同一100%整体。",
+        "check": "核对是否多选、交叉集合及遗漏项，不能仅通过强制归一化修复重叠口径。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-023",
+    "rule": "多环形中心值与标签应逐图匹配相同的统计角色。",
+    "check": "核对中心值字段及标签，特别是单项占比是否被叫作Total。；逐图核对中心是合计还是单项值，尤其空标签默认Total与单项字段组合。",
+    "applies_when": "环形中心展示数字或百分比。；多个环形同时显示中心数字。",
+    "tags": {
+      "chart_type": [
+        "pie",
+        "donut"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-donut-chart",
+        "locator": "pages/ACA-559951512ab0.txt#B47",
+        "excerpt": "Show single",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-multiple-donuts-chart",
+        "locator": "pages/ACA-e0e9e0a5585b.txt#B43",
+        "excerpt": "Show single",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "text-annotation-conclusion",
+    "scope_variants": [
+      {
+        "applies_when": "环形中心展示数字或百分比。",
+        "check": "核对中心值字段及标签，特别是单项占比是否被叫作Total。"
+      },
+      {
+        "applies_when": "多个环形同时显示中心数字。",
+        "check": "逐图核对中心是合计还是单项值，尤其空标签默认Total与单项字段组合。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-024",
+    "rule": "散点位置应绑定两个定量维度。",
+    "check": "核对横纵轴字段及单位，检查是否误把类别编号当成连续数量并据斜率作解释。",
+    "applies_when": "图被用来解释两个连续量的关系。",
+    "tags": {
+      "chart_type": [
+        "scatter",
+        "dot",
+        "range",
+        "arrow"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-scatter-plot",
+        "locator": "pages/ACA-afdb40d1f34d.txt#B1",
+        "excerpt": "two quantitative",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-encoding-axes",
+    "scope_variants": [
+      {
+        "applies_when": "图被用来解释两个连续量的关系。",
+        "check": "核对横纵轴字段及单位，检查是否误把类别编号当成连续数量并据斜率作解释。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-025",
+    "rule": "竖直时间轴的上下顺序应与其声称的阅读方向一致。",
+    "check": "核对最早和最晚事件的纵向位置，检查反转时间轴后的日期绑定。",
+    "applies_when": "竖直排列事件且要求从上到下按时间读取。",
+    "tags": {
+      "chart_type": [
+        "scatter",
+        "dot",
+        "range",
+        "arrow"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-a-timeline-using-scatter-plots",
+        "locator": "pages/ACA-6c908a328d59.txt#B5",
+        "excerpt": "chronological order",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-encoding-axes",
+    "scope_variants": [
+      {
+        "applies_when": "竖直排列事件且要求从上到下按时间读取。",
+        "check": "核对最早和最晚事件的纵向位置，检查反转时间轴后的日期绑定。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-026",
+    "rule": "箭头应从早期值指向晚期值。",
+    "check": "核对日期字段、箭尾和箭头的值，避免数值排序让减少被画成向右增长。；核对箭尾早期值和箭头晚期值，减少时应向较小值指向。",
+    "applies_when": "箭头图表达两个日期之间的变动。；两期得票份额以箭头表示。",
+    "tags": {
+      "chart_type": [
+        "scatter",
+        "dot",
+        "range",
+        "arrow"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/academy/how-to-create-an-arrow-plot",
+        "locator": "pages/ACA-ab16f15210d9.txt#B1",
+        "excerpt": "earlier date",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/academy/examples-of-datawrapper-arrow-plots",
+        "locator": "pages/ACA-677213f30395.txt#B1；案例图 https://datawrapper.dwcdn.net/8DdZ3/full.png",
+        "excerpt": "Here",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://datawrapper.dwcdn.net/8DdZ3/full.png",
+        "locator": "案例图的标题或列标题",
+        "excerpt": "Big parties gain, small parties loose",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-encoding-axes",
+    "scope_variants": [
+      {
+        "applies_when": "箭头图表达两个日期之间的变动。",
+        "check": "核对日期字段、箭尾和箭头的值，避免数值排序让减少被画成向右增长。"
+      },
+      {
+        "applies_when": "两期得票份额以箭头表示。",
+        "check": "核对箭尾早期值和箭头晚期值，减少时应向较小值指向。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-027",
+    "rule": "瀑布图放大差值时应明确总量柱的截断。",
+    "check": "检查总量标记是否用点、渐隐等提示断基线，核对文案不再比较总量与变动的柱长比例。",
+    "applies_when": "为看清小变动而去掉零基线。",
+    "tags": {
+      "chart_type": [
+        "dual_axis",
+        "waterfall"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/blog/waterfall-charts-guide",
+        "locator": "pages/BLOG-0e7b35d14645.txt#B12",
+        "excerpt": "zoom in",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "用户于2026-11-05决定保留瀑布差值放大，要求提示总量柱截断；参见CON-001。",
+    "topic_bucket": "chart-specific",
+    "scope_variants": [
+      {
+        "applies_when": "为看清小变动而去掉零基线。",
+        "check": "检查总量标记是否用点、渐隐等提示断基线，核对文案不再比较总量与变动的柱长比例。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-028",
+    "rule": "堆叠柱中非底层分量的比较应以厚度或数值为准。",
+    "check": "核对该层的上界减下界及标签，不能用其顶端高度代表该组成的大小。",
+    "applies_when": "任务需要比较同一组成跨期增减。",
+    "tags": {
+      "chart_type": [
+        "column",
+        "bar"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/blog/stacked-column-charts",
+        "locator": "pages/BLOG-f06dfbc6add0.txt#B3",
+        "excerpt": "same baseline",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-specific",
+    "scope_variants": [
+      {
+        "applies_when": "任务需要比较同一组成跨期增减。",
+        "check": "核对该层的上界减下界及标签，不能用其顶端高度代表该组成的大小。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-029",
+    "rule": "类别之间没有连续变化关系时，应核对折线连接所暗示的趋势。",
+    "check": "检查类别顺序是否有时间或其他有意义的连续依据，不将任意排列的折线斜率解读为趋势。",
+    "applies_when": "横轴是无自然顺序类别且文案解释相邻走势。",
+    "tags": {
+      "chart_type": [
+        "line",
+        "area"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/blog/line-charts",
+        "locator": "pages/BLOG-254fdc392b81.txt#B3",
+        "excerpt": "different categories",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "chart-encoding-axes",
+    "scope_variants": [
+      {
+        "applies_when": "横轴是无自然顺序类别且文案解释相邻走势。",
+        "check": "检查类别顺序是否有时间或其他有意义的连续依据，不将任意排列的折线斜率解读为趋势。"
+      }
+    ]
+  },
+  {
+    "id": "EXP-030",
+    "rule": "精细比较相近数值时，应提供足以分辨的编码或读数。",
+    "check": "定位需要比较的两值，按目标尺寸检查能否正确区分；清晰标签可补足视觉精度。缺少读数时建议共同基线或合适刻度，不把某种图型本身判错。",
+    "applies_when": "面积或饼图等用于区分细微变化或份额大小；仅看大致构成与趋势时不强制精细编码。",
+    "tags": {
+      "chart_type": [
+        "line",
+        "area",
+        "pie",
+        "donut"
+      ],
+      "medium": [
+        "static",
+        "interactive"
+      ],
+      "domain": [
+        "general",
+        "finance"
+      ]
+    },
+    "sources": [
+      {
+        "reference": "https://www.datawrapper.de/blog/area-charts",
+        "locator": "pages/BLOG-04f18ad9dc01.txt#B5",
+        "excerpt": "very small",
+        "retrieved": "2026-11-05"
+      },
+      {
+        "reference": "https://www.datawrapper.de/blog/pie-charts",
+        "locator": "pages/BLOG-c6ff7a76ce0d.txt#B4",
+        "excerpt": "differences between",
+        "retrieved": "2026-11-05"
+      }
+    ],
+    "status": "active",
+    "confidence": "medium",
+    "resolution": "本条只作非冲突归并；冲突需由用户决策。",
+    "topic_bucket": "infographic-medium",
+    "scope_variants": [
+      {
+        "applies_when": "主要任务是比较接近数值的微小变化。",
+        "check": "检查目标尺寸下是否能读出变化，若只有无法辨认色带且无数值支持，建议线图或补读数。"
+      },
+      {
+        "applies_when": "任务要区分相近扇区的大小。",
+        "check": "查看扇区标签和可读值，无法分辨时定位具体两项并建议共同基线编码。"
+      }
+    ]
+  }
+]

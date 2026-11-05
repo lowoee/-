@@ -1,0 +1,24 @@
+{
+  "chart_id": "chart-06",
+  "issues": [
+    {
+      "description": "折线连接无连续顺序的行业，暗示板块间存在连续变化。",
+      "experience_ids": [],
+      "location": "相邻行业之间的连线",
+      "evidence": [
+        "用途是同日横向比较。源码用 line 连接 nominal 行业，sort 为 null。"
+      ],
+      "suggestion": "使用按市盈率排序的水平点图或条形图。"
+    },
+    {
+      "description": "行业标签互相覆盖，读者难以将数据点与行业对应。",
+      "experience_ids": [],
+      "location": "横轴行业名称",
+      "evidence": [
+        "图中“非银金融”“房地产”“建筑装饰”等文字重叠。源码在 420 的宽度内横排 12 个标签，并设置 labelOverlap 为 false。"
+      ],
+      "suggestion": "给行业标签各留独立一行和足够的文本宽度。"
+    }
+  ],
+  "observations": []
+}

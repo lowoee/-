@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "用户持有的理财产品类型",
+    "subtitle": [
+      "问卷：“您目前持有以下哪些产品？”（可多选，n = 2,000）",
+      "来源：模拟数据"
+    ]
+  },
+  "width": 300,
+  "height": 300,
+  "transform": [
+    {
+      "calculate": "datum['产品'] + '  ' + datum['占比'] + '%'",
+      "as": "图例"
+    }
+  ],
+  "mark": {
+    "type": "arc",
+    "stroke": "#ffffff",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "theta": {
+      "field": "占比",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "图例",
+      "type": "nominal",
+      "sort": {
+        "field": "占比",
+        "order": "descending"
+      },
+      "scale": {
+        "scheme": "tableau20"
+      },
+      "legend": {
+        "title": "产品类型（选择该项的用户占比）",
+        "titleLimit": 320
+      }
+    },
+    "order": {
+      "field": "占比",
+      "type": "quantitative",
+      "sort": "descending"
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "产品": "货币基金",
+        "占比": 46
+      },
+      {
+        "产品": "银行理财",
+        "占比": 31
+      },
+      {
+        "产品": "债券基金",
+        "占比": 18
+      },
+      {
+        "产品": "股票基金",
+        "占比": 15
+      },
+      {
+        "产品": "混合基金",
+        "占比": 12
+      },
+      {
+        "产品": "指数基金",
+        "占比": 9
+      },
+      {
+        "产品": "黄金",
+        "占比": 6
+      },
+      {
+        "产品": "保险",
+        "占比": 5
+      },
+      {
+        "产品": "信托",
+        "占比": 3
+      },
+      {
+        "产品": "REITs",
+        "占比": 2
+      },
+      {
+        "产品": "其他",
+        "占比": 1
+      }
+    ]
+  },
+  "config": {
+    "font": "PingFang SC",
+    "background": "#ffffff",
+    "padding": 16,
+    "title": {
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555555",
+      "anchor": "start",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "titleFontWeight": "normal",
+      "labelColor": "#333333",
+      "titleColor": "#333333"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

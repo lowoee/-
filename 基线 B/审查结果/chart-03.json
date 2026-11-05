@@ -1,0 +1,15 @@
+{
+  "chart_id": "chart-03",
+  "issues": [
+    {
+      "description": "饼图将多选用户比例重归一化，图例的用户占比与扇区份额不一致。",
+      "experience_ids": [],
+      "location": "饼图及右侧图例",
+      "evidence": [
+        "图面注明可多选。CSV 的 11 项合计 148%，源码将占比用 arc 的 theta 堆叠为整圆，46% 的货币基金只占约 31% 的圆周。"
+      ],
+      "suggestion": "用按选择率降序排列的水平条形图，标注原始百分比，保留多选说明和样本量。"
+    }
+  ],
+  "observations": []
+}

@@ -1,0 +1,37 @@
+{
+  "chart_id": "chart-06",
+  "issues": [
+    {
+      "description": "横轴行业标签互相重叠，读者难以将部分行业与对应的市盈率点位匹配。",
+      "experience_ids": [],
+      "severity": "high",
+      "location": "PNG 底部横轴；spec.encoding.x.axis",
+      "suggestion": "改用横向条形图，将完整行业名称逐行放在左侧，并为标签预留足够空间。",
+      "evidence": [
+        "PNG 中“非银金融”与“房地产”、“计算机”与“医药生物”等相邻标签发生重叠。",
+        "源码在 420 像素宽的绘图区放置 12 个行业标签，设置 labelAngle: 0 和 labelOverlap: false，保留了所有水平标签。"
+      ]
+    },
+    {
+      "description": "折线连接了没有自然顺序的行业，使相邻点之间的斜率看起来像连续趋势，妨碍对各行业估值水平的直接比较。",
+      "experience_ids": [],
+      "severity": "medium",
+      "location": "PNG 绘图区；spec.mark 和 spec.encoding.x",
+      "suggestion": "用从零起始的横向条形图展示各行业市盈率，并按数值降序排列，便于比较高低。",
+      "evidence": [
+        "用途是比较同一统计日的行业估值；源码将行业编码为 nominal，未设置有含义的排序，却使用 line 连接点位。",
+        "PNG 中煤炭（8.1 倍）、电子（42.5 倍）和计算机（56.8 倍）形成显著上升线段，其形状取决于这些行业在横轴上的排列。"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "description": "CSV 与源码的 12 项行业数值逐项一致；PNG 点位与纵轴刻度相符，未见数值或点位错配。",
+      "evidence": [
+        "最低点银行为 5.8 倍，位于 0 和 10 之间；最高点计算机为 56.8 倍，位于 50 和 60 之间。",
+        "电子为 42.5 倍，略高于 40；医药生物为 31.4 倍，略高于 30。"
+      ],
+      "reason_unconfirmed": "PNG 未标注逐点数值，小数精度只能通过 CSV 和源码核对。"
+    }
+  ]
+}

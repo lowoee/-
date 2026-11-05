@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visual-experience-system"
+version = "0.1.0"
+description = "Traceable visualization experience library and image review runner"
+requires-python = ">=3.10"
+dependencies = ["jsonschema>=4.17,<5"]
+
+[project.scripts]
+vizexp = "vizexp.cli:main"
+
+[tool.setuptools]
+packages = ["vizexp"]

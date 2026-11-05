@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+*_traces/
+results/smoke*.json
+results/prepared*.json
+results/retrieval*.json
